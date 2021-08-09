@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+/*font-family: 'Red Hat Display', sans-serif;*/
+
+body{
+    margin: 0 auto;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+#bg-d img{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#bg-m img{
+    display: none;
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.9);
+    background-color: #fff;
+}
+
+#top{
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+#top img{
+    width: 100%;
+}
+
+#display{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    margin: 6% 5% 0 5%;
+    align-items: center;
+    padding: 5% 0 5% 0;
+    border-radius: 5px;
+}
+
+#display img{
+    height: 100%;
+    margin-left: 5%;
+}
+
+#plan{
+    display: block;
+    line-height: 0.7;
+    margin-left: 5%;
+}
+
+#bottom{
+    margin: 8%;
+}
+
+p#main{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 10% 0 10%;
+    color: hsl(223, 47%, 23%);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+#plan p{
+    color: hsl(223, 47%, 23%);
+    opacity: 0.8;
+}
+
+#change{
+    margin-left: 22%;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#change:hover{
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+#plan p{
+    position: relative;
+    left: -8%;
+}
+
+button{
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 10px;
+    height: 55px;
+    width: 90%;
+    color: #fff;
+    font-size: 16px;
+    background-color: hsl(245, 75%, 52%);
+    margin-top: 7%;
+    cursor: pointer;
+    box-shadow: 0 30px 10px -10px rgb(211, 213, 224);
+}
+
+button:hover{
+    background-color: hsl(223, 47%, 23%);
+}
+
+#cancel{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-top: 8%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#cancel:hover{
+    color: #000;
+}
+
+#order,h3{
+    color: #00031F;
+}
+
+@media screen and (max-width: 375px){
+    #bg-d img{
+        display: none;
+    }
+    
+    #bg-m img{
+        position: fixed;
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    #display{
+        margin: 6% 0 0 0;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    #plan{
+        margin-left: 5%;
+        line-height: 0.6;
+    }
+
+    #change{
+        margin-left: 11%;        
+    }
+
+    #display img{
+        margin-left: 4%;
+    }
+}
